@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+</head>
+<body>
+<!--其中action即为要跳转的servlet路径（即在web.xml中配置的servlet-mapping   ：<url-pattern>/Login</url-pattern>   ，）写  /  后的内容。-->
+<form action="Login" method="post">
+    <table>
+        <!--第一行:姓名-->
+        <tr>
+            <td><label for="name">姓名</label></td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <!--第二行:密码-->
+        <tr>
+            <td><label for="password">密码</label></td>
+            <td><input type="password" name="password" id="password"></td>
+        </tr>
+        <!--第三行:登陆+重置-->
+        <tr>
+            <td><input type="submit" value="登录"></td>
+            <td><input type="reset" value="重置"></td>
+        </tr>
+    </table>
+</form>
+<!--注册-->
+<a href="Register.html">注册</a>
+</body>
+</html>
